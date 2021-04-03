@@ -1,0 +1,124 @@
+/* Colors */
+
+/* Main */
+$color-primary: #AD99E5;
+$color-notify: #F0C00E;
+$color-success: #4AB15E;
+$color-error: #FF6242;
+
+/* Background */
+$color-bg: #EFEFEF;
+$color-bg-secondary: #FFFFFF;
+$color-bg-secondary-active: #E9E9E9;
+$color-bg-warning: #FFF9CF;
+$color-bg-tertiary: #ECEBFF;
+$color-bg-tertiary-on-grey: #E6E6F2;
+
+/* Text */
+$color-text: #272727;
+$color-text-secondary: #9AA1A5;
+$color-text-disabled: #D9DCE2;
+$color-link: #6C6BCF;
+$color-link-secondary: #BDBCE9;
+$color-text-collection: #272727;
+
+/* Icons */
+$color-icon: #272727;
+$color-icon-link: #6C6BCF;
+$color-icon-disabled: #D9DCE2;
+
+/* States */
+$color-bg-toolbar: #D3D3D3;
+$color-overlay: #9F9F9F;
+
+/* Dividers */
+$color-divider: #E0E2E8;
+$color-border: #E0E2E8;
+$color-border-hover: #C2C6D0;
+$color-border-active: #9DA0A7;
+$color-border-focus: #9DA0A7;
+
+/* ----------------------- */
+
+/* Spacing and layout */
+
+/* Spacing */
+$spacing-01: 4px;
+$spacing-02: 8px;
+$spacing-03: 12px;
+$spacing-04: 16px;
+$spacing-05: 24px;
+$spacing-06: 32px;
+$spacing-07: 40px;
+$spacing-08: 48px;
+
+/* Layout */
+$spacing-01: 16px;
+$spacing-02: 24px;
+$spacing-03: 32px;
+$spacing-04: 48px;
+$spacing-05: 64px;
+$spacing-06: 96px;
+$spacing-07: 160px;
+
+/* ----------------------- */
+
+/* Text styles */
+
+.textTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: -0.8px;
+  font-weight: medium;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.textTitleCollection {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $color-text-collection;
+}
+
+.textBody {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: $color-text;
+}
+
+.textBodyCards {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $color-text;
+}
+
+.textCaption {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text;
+}
+
+.textOverline {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: medium;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.textOverline {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: medium;
+  color: $color-text;
+}
