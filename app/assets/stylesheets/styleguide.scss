@@ -1,0 +1,1397 @@
+* {
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --main-black: #272727;
+  --main-white: #F8F5E8;
+  --main-green: #4AB15E;
+  --main-red: #FF6242;
+  --main-yellow: #FECE30;
+  --main-purple: #9897DE;
+}
+
+body {
+  background: var(--main-white);
+  overflow-x: hidden;
+
+  font-family: "Inter";
+  color: var(--main-black);
+
+  // section {
+  //   padding-bottom: 8vh;
+  // }
+}
+
+// mixin
+$margin--top--x: 1.5vh;
+$margin--top--1x: 4vh;
+$margin--top--2x: 8vh;
+
+$margin--top--1440--x: 6vh;
+$margin--top--1440--2x: 12vh;
+
+@mixin styles ($type_of_tag) {
+
+
+  @media (min-width: 768px) {
+    @if $type_of_tag == h1 {
+      font-size: 54px;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+
+      padding-top: 6vh;
+      padding-left: 5vw;
+    }
+
+    @if $type_of_tag == h3 {
+      font-size: 18px;
+      width: 50vw;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      font-weight: bold;
+
+      padding-left: 5vw;
+      margin-top: $margin--top--2x;
+
+    }
+    @if $type_of_tag == p {
+      font-size: 18px;
+      width: 50vw;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+
+      padding-left: 5vw;
+      margin-top: $margin--top--x;
+    }
+  }
+
+  @if $type_of_tag == h1 {
+
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+
+    padding-top: 6vh;
+    padding-left: 5vw;
+  }
+
+  @if $type_of_tag == h3 {
+    font-size: 14px;
+    width: 95vw;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+
+    padding-left: 5vw;
+    margin-top: $margin--top--2x;
+
+  }
+  @if $type_of_tag == p {
+    font-size: 14px;
+    width: 95vw;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+
+    padding-left: 5vw;
+    margin-top: $margin--top--x;
+  }
+
+  @media (min-width: 1440px) {
+
+    @if $type_of_tag == h1 {
+      font-size: 64px;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+
+      padding-top: 6vh;
+      padding-left: 5vw;
+    }
+
+    @if $type_of_tag == h3 {
+      font-size: 22px;
+      width: 40vw;
+      line-height: 120%;
+      letter-spacing: -0.01em;
+      font-weight: bold;
+
+      padding-left: 5vw;
+      margin-top: $margin--top--1440--2x;
+
+    }
+    @if $type_of_tag == p {
+      font-size: 22px;
+      width: 40vw;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+
+      padding-left: 5vw;
+      margin-top: $margin--top--1440--x;
+    }
+  }
+
+}
+
+
+
+
+
+
+// styles---------------
+
+.conception {
+  // height: 100vh;
+
+  background: var(--main-black);
+  padding-bottom: 8vh;
+
+  .conception__div {
+    h1{
+      @include styles(h1);
+      color: var(--main-white);
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+      width: 95vw;
+
+      color: var(--main-white);
+
+      padding-left: 5vw;
+      margin-top: $margin--top--x;
+
+    }
+  }
+}
+
+.logo {
+  background: var(--main-white);
+  padding-bottom: 8vh;
+  .logo__one{
+    h1 {
+      @include styles(h1);
+    }
+
+    p {
+      @include styles(p);
+      margin-top: $margin--top--x;
+    }
+
+    h3 {
+      @include styles(h3);
+      margin-top: $margin--top--2x;
+    }
+
+    .essen__logo__big-small,
+    .essen__logo__black__v1,
+    .essen__logo__black__v2__v3 {
+      display: block;
+      margin-top: $margin--top--x;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .logo__two {
+
+    p {
+      @include styles(p);
+      margin-top: $margin--top--1x;
+    }
+
+    .essen__logo__tile__div {
+      width: 100vw;
+      margin-top: $margin--top--2x;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .essen__logo__tile {
+      width: 50vw;
+      margin: -1px;
+    }
+  }
+
+  .logo__three {
+    h3 {
+      @include styles(h3);
+      margin-top: $margin--top--2x;
+    }
+
+    .essen__logo__blueprint {
+      display: block;
+      margin-top: $margin--top--x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+      // transform: translateX(-1vw);
+    }
+
+    p {
+      margin-top: $margin--top--x;
+      @include styles(p);
+      line-height: 22px;
+    }
+  }
+
+  .logo__four {
+    margin-top: $margin--top--1x;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .essen__logo__wrong {
+    width: 50vw;
+    padding: 8vw;
+
+  }
+}
+
+.colors {
+  background: var(--main-black);
+  color: var(--main-white);
+  padding: 0;
+
+  .colors__one
+  h1 {
+    @include styles(h1);
+  }
+
+  p {
+    @include styles(p);
+    margin-top: $margin--top--1x;
+  }
+
+  .colors__two {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $margin--top--1x;
+
+    width: 100vw;
+
+
+    div {
+      width: 50vw;
+      height: 20vh;
+
+      h1 {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        padding-top: 5%;
+        padding-left: 5%;
+      }
+
+      p {
+        font-size: 12px;
+        margin-top: 10px;
+
+        padding-left: 5%;
+        font-weight: 500;
+      }
+    }
+
+    .color__tile__one {
+      background-color: var(--main-white);
+      color: var(--main-black);
+    }
+    .color__tile__two {
+      background-color: var(--main-black);
+      border-top: 1px solid var(--main-white);
+    }
+    .color__tile__three {
+      background-color: var(--main-purple);
+    }
+    .color__tile__four {
+      background-color: var(--main-yellow);
+      color: var(--main-black);
+    }
+    .color__tile__five {
+      background-color: var(--main-red);
+    }
+    .color__tile__six {
+      background-color: var(--main-green);
+      color: var(--main-black);
+    }
+  }
+
+  .colors__three {
+    h3 {
+      @include styles(h3);
+      margin-top: $margin--top--2x;
+    }
+
+    p {
+      @include styles(p);
+      margin-top: $margin--top--x;
+    }
+  }
+
+  .colors__four {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100vw;
+
+
+    margin-top: $margin--top--1x;
+
+    div {
+      width: 33.3vw;
+      height: 18vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .essen__logo__wrong {
+      width: 20vw;
+
+    }
+
+    .wrong__tile__orange {
+      background-color: var(--main-red);
+    }
+    .wrong__tile__green {
+      background-color: var(--main-green);
+    }
+    .wrong__tile__purpule {
+      background-color: var(--main-purple);
+    }
+
+    .cross {
+      position: absolute;
+      width: 100vw;
+
+
+    }
+  }
+}
+
+.composition {
+  background: var(--main-red);
+  color: var(--main-white);
+
+  padding-bottom: 16vw;
+
+  h1 {
+    @include styles(h1);
+  }
+
+  h3 {
+    @include styles(h3);
+    margin-top: $margin--top--2x;
+  }
+
+  .composition__one{
+
+    p {
+      @include styles(p);
+      margin-top: $margin--top--x;
+
+      span {
+        color: var(--main-black);
+        background: none;
+      }
+    }
+
+    .essen__grid__blueprint {
+      display: block;
+      margin-top: $margin--top--2x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+
+    .description {
+      margin-top: 0px;
+    }
+  }
+
+  .composition__two {
+
+    p {
+      @include styles(p);
+      margin-top: $margin--top--x;
+    }
+
+    .outdoor__ad__box__two{
+
+    }
+
+    .outdoor__ad {
+      display: block;
+      margin-top: $margin--top--1x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+
+    #outdoor__ad__three{
+      margin-top: $margin--top--2x;
+    }
+  }
+
+  .composition__three {
+
+    p{
+      @include styles(p);
+      margin-top: 15px;
+    }
+
+    .outdoor__ad__box {
+      margin-top: $margin--top--2x;
+    }
+
+    .socialnetwork__ad {
+      display: block;
+      margin-top: $margin--top--x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+  }
+}
+
+.fonts {
+  background: var(--main-yellow);
+
+  h1 {
+    @include styles(h1);
+  }
+
+  .fonts__one{
+    h3 {
+      @include styles(h3);
+      margin-top: $margin--top--1x;
+    }
+    p {
+      margin-top: $margin--top--x;
+      @include styles(p);
+
+    }
+  }
+  .fonts__three {
+    h1 {
+      font-family: "Base&Bloom";
+      letter-spacing: 0;
+    }
+    p {
+      font-family: "Base&Bloom";
+    }
+  }
+  .fonts__four {
+    h1 {
+      font-family: "GlyphWorld-Mountain";
+      letter-spacing: 0;
+    }
+    .fonts__lettres {
+      font-family: "GlyphWorld-Mountain";
+    }
+  }
+  .fonts__five {
+    h1 {
+      font-family: "GlyphWorld-Meadow";
+      letter-spacing: 0;
+    }
+    .fonts__lettres {
+      font-family: "GlyphWorld-Meadow"
+    }
+  }
+
+  .fonts__two,
+  .fonts__three,
+  .fonts__four,
+  .fonts__five {
+    h1 {
+      font-size: 54px;
+    }
+
+
+
+
+    p {
+      @include styles(p);
+    }
+
+    p:first-of-type {
+      margin-top: 14px;
+    }
+  }
+  .fonts__five {
+    padding-bottom: 8vw;
+  }
+
+
+
+  .fonts__six {
+    background: var(--main-green);
+    padding-bottom: 8vw;
+    width: 100vw;
+    padding-bottom: 8vh;
+
+
+    .txt__big,
+    .txt__medium,
+    .txt__small {
+      display: flex;
+      flex-wrap: wrap;
+
+      padding-top: $margin--top--1x;
+
+      p {
+        padding-left: 5vw;
+      }
+
+      .txt__big__left,
+      .txt__medium__left,
+      .txt__small__left {
+        width: 50vw;
+
+      }
+      .txt__big__right,
+      .txt__medium__right,
+      .txt__small__right {
+        width: 50vw;
+      }
+
+      .txt__big__left {
+        p {
+          font-size: 42px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+      }
+      .txt__big__right {
+        p {
+          font-size: 42px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+        p:nth-of-type(2) {
+          font-size: 23px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+
+          margin-top: 15px;
+        }
+      }
+
+      .txt__medium__left {
+        p {
+          font-size: 23px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+      }
+      .txt__medium__right {
+        p {
+          font-size: 23px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+        p:nth-of-type(2) {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+
+          margin-top: 15px;
+        }
+      }
+
+      .txt__small__left {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+      }
+      .txt__small__right {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+          line-height: 91%
+        }
+        p:nth-of-type(2) {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.1em;
+
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+.graphics {
+  padding-bottom: 8vh;
+  background: var(--main-white);
+
+  .graphics__one{
+    h1 {
+      @include styles(h1);
+    }
+
+    p {
+      @include styles(p);
+    }
+  }
+
+  .graphics__two{
+
+    .outdoor__ad {
+      display: block;
+      margin-top: $margin--top--1x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+
+    p {
+      @include styles(p);
+      margin-top: 15px;
+    }
+  }
+
+  .graphics__three {
+    h1 {
+      @include styles(h1);
+      padding-top: 8vh;
+    }
+
+    .graphics__columns__color {
+      display: block;
+      margin-top: $margin--top--x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+
+    .graphics__auto__rows,
+    .graphics__back__rows {
+      display: block;
+      margin-top: $margin--top--x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 84vw;
+    }
+
+     p {
+      @include styles(h1);
+      letter-spacing: 0;
+      font-size: 14px;
+      padding-top: $margin--top--1x ;
+    }
+  }
+}
+
+.photo {
+  background: var(--main-purple);
+  padding-bottom: 8vw;
+
+  .photo__one {
+    h1 {
+      @include styles(h1);
+      width: 90vw;
+    }
+    p {
+      @include styles(p);
+    }
+
+    p:nth-of-type(2){
+      margin-top: 15px;
+    }
+
+    .essen__photo__blueprint {
+      display: block;
+      margin-top: $margin--top--2x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+  }
+
+  .photo__two {
+    h3 {
+      @include styles(h3);
+    }
+
+    .photo__food {
+      display: block;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+    }
+  }
+}
+
+//768px----------------------------------
+
+@media (min-width: 768px) {
+  .conception{
+    .conception__div{
+      p {
+        font-size: 54px;
+        width: 90vw;
+      }
+    }
+  }
+
+  .logo {
+    .logo__two{
+
+      p {
+        margin-top: $margin--top--1x;
+      }
+      // justify-content: space-between;
+      .essen__logo__tile {
+        width: 33vw;
+      }
+
+      .essen__logo__tile:nth-of-type(3) {
+        border-top: 1px solid var(--main-black);
+      }
+    }
+  }
+
+  .colors {
+    .colors__two {
+      div {
+        width: 33.3vw;
+      }
+    }
+  }
+
+  .composition {
+    .composition__one{
+      .description{
+        margin-top: -20px;
+      }
+
+    }
+    .composition__two {
+      .outdoor__ad__box__one{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+
+        .outdoor__ad {
+          width: 43vw;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .outdoor__ad__box__two {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: $margin--top--2x;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+
+        .outdoor__ad__box__left,
+        .outdoor__ad__box__right {
+          width: 43vw;
+          p {
+            padding: 0;
+            width: 43vw;
+          }
+        }
+
+        #outdoor__ad__three {
+          margin-top: 0;
+        }
+
+        .outdoor__ad {
+          width: 43vw;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .composition__three {
+      .outdoor__ad__box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+
+        .socialnetwork__ad {
+          width: 43vw;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .fonts {
+    .fonts__one {
+      h3 {
+        margin-top: $margin--top--1x;
+      }
+    }
+    .fonts__two,
+    .fonts__three,
+    .fonts__four,
+    .fonts__five {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: $margin--top--2x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+      .fonts__box__left {
+        width: 45vw;
+
+        h1,
+        p {
+          padding: 0;
+          width: 42vw;
+        }
+      }
+
+      .fonts__box__right {
+        width: 45vw;
+
+        p {
+          width: 42vw;
+          margin: 0;
+        }
+      }
+    }
+
+    .fonts__six {
+      .txt__big {
+        padding-top: 4vh;
+        .txt__big__left{
+          p {
+            font-size: 80px;
+          }
+        }
+
+        .txt__big__right {
+          p {
+            font-size: 80px
+          }
+
+          p:nth-of-type(2) {
+            font-size: 45px;
+          }
+        }
+      }
+      .txt__medium {
+        padding-top: 10vh;
+        .txt__medium__left{
+          p {
+            font-size: 45px;
+          }
+        }
+
+        .txt__medium__right {
+          p {
+            font-size: 45px
+          }
+
+          p:nth-of-type(2) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .txt__small {
+        padding-top: 10vh;
+        .txt__small__left{
+          p {
+            font-size: 18px;
+          }
+        }
+
+        .txt__small__right {
+          p {
+            font-size: 18px
+          }
+
+          p:nth-of-type(2) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .graphics {
+    padding-bottom: 9vh;
+    .graphics__two {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      margin-top: $margin--top--1x;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+
+      div {
+        width: 45vw;
+
+        p {
+          padding: 0;
+          width: 40vw;
+
+        }
+
+        .outdoor__ad {
+          width: 43vw;
+          margin: 0;
+        }
+      }
+    }
+
+    .graphics__three {
+       h1 {
+         padding-top: $margin--top--2x;
+       }
+      p {
+        padding-top: 0;
+        margin-top: $margin--top--1x;
+        font-size: 18px;
+      }
+      p:nth-of-type(2) {
+        padding-top: 0;
+        margin-top: $margin--top--2x;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .photo {
+    .photo__two {
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+
+      }
+
+      .photo__food {
+        width: 21vw;
+        margin-top: 10px;
+      }
+
+    }
+  }
+}
+
+//1024px----------------------------------
+
+@media (min-width: 1024px) {
+  .conception{
+    padding-bottom: 12vh;
+    .conception__div{
+      p {
+        font-size: 64px;
+        width: 90vw;
+        margin-top: 8vh;
+
+      }
+    }
+  }
+
+  .logo {
+    padding-top: 4vw;
+
+    .logo__one {
+      h3 {
+      }
+      .essen__logo__big-small,
+      .essen__logo__black__v1,
+      .essen__logo__black__v2__v3 {
+        width: 45vw;
+        margin-top: $margin--top--1x;
+
+      }
+    }
+
+    .logo__two {
+      p {
+        margin-top: $margin--top--2x;
+      }
+      .essen__logo__tile__div {
+        margin-top:$margin--top--1440--2x;
+      }
+    }
+
+    .logo__three {
+      .essen__logo__blueprint{
+        width: 50vw;
+      }
+    }
+
+    .logo__four {
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+
+      padding-bottom: 10vh;
+
+      .essen__logo__wrong{
+
+        width: 22vw;
+        margin-top: 4vh;
+        padding: 3vw;
+      }
+    }
+  }
+
+  .colors {
+    padding-top: 4vw;
+
+    .colors__two {
+      width: 100vw;
+      div {
+        height: 40vh;
+
+        h1 {
+          font-size: 34px;
+        }
+
+        p {
+          font-size: 22px;
+
+        }
+      }
+    }
+  }
+
+  .composition {
+    padding-top: 4vw;
+
+    .composition__one {
+      .description {
+        padding-left: 25vw;
+        width: 50vw;
+      }
+      .essen__grid__blueprint{
+        width: 50vw;
+      }
+    }
+
+    .composition__three {
+      .outdoor__ad__box {
+        justify-content: start;
+        .socialnetwork__ad {
+          width: 20vw;
+        }
+        .socialnetwork__ad:nth-of-type(2) {
+          margin-left: 5vw;
+        }
+      }
+    }
+  }
+
+  .fonts {
+    padding-top: 4vw;
+
+    .fonts__two {
+      // margin-top: 15vw;
+      .fonts__box__left {
+        h1 {
+          font-size: 143px;
+        }
+      }
+    }
+
+    .fonts__three {
+      margin-top: 15vw;
+      .fonts__box__left {
+        h1 {
+          font-size: 143px;
+        }
+      }
+    }
+
+    .fonts__four {
+      margin-top: 15vw;
+      .fonts__box__left {
+        h1 {
+          font-size: 143px;
+        }
+      }
+    }
+
+    .fonts__five {
+      margin-top: 15vw;
+      .fonts__box__left {
+        h1 {
+          font-size: 143px;
+        }
+      }
+    }
+
+    .fonts__six {
+      padding-top: 4vw;
+
+      padding-bottom: 14vh;
+
+      .txt__big{
+        .txt__big__left{
+          p {
+            font-size: 133px;
+          }
+        }
+        .txt__big__right {
+          p {
+            font-size: 133px;
+          }
+
+          p:nth-of-type(2) {
+            font-size: 66px;
+          }
+        }
+      }
+      .txt__medium{
+        .txt__medium__left{
+          p {
+            font-size: 66px;
+          }
+        }
+        .txt__medium__right {
+          p {
+            font-size: 66px;
+          }
+
+          p:nth-of-type(2) {
+            font-size: 22px;
+          }
+        }
+      }
+      .txt__small{
+        .txt__small__left{
+          p {
+            font-size: 22px;
+          }
+        }
+        .txt__small__right {
+          p {
+            font-size: 22px;
+          }
+
+          p:nth-of-type(2) {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .graphics {
+    padding-top: 4vw;
+
+    padding-bottom: 13vh;
+    .graphics__two {
+      justify-content: start;
+      margin-top: $margin--top--2x;
+      div {
+        width: 30vw;
+        .outdoor__ad {
+          width: 30vw;
+        }
+      }
+      div:nth-of-type(2) {
+        margin-left: 10vw;
+      }
+    }
+
+    .graphics__three {
+      margin-top: $margin--top--2x;
+      .graphics__columns__color {
+        margin-top: $margin--top--1x;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 22px;
+        margin-top: 12vh;
+      }
+
+      p {
+        font-size: 22px;
+        margin-top: $margin--top--2x;
+        padding-bottom: $margin--top--x;
+      }
+    }
+  }
+
+  .photo {
+    padding-top: 4vw;
+
+    .photo__one {
+      p {
+        margin-top: $margin--top--1x;
+      }
+      p:nth-of-type(2) {
+        padding-left: 25vw;
+        width: 50vw;
+      }
+
+      .essen__photo__blueprint {
+        width: 50vw;
+        margin-top: 12vh;
+      }
+
+
+    }
+
+    .photo__two {
+      .photo__food {
+        margin-top: 3vh;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .conception {
+    padding-bottom: 12vh;
+    .conception__div{
+      p {
+        margin-top: 8vh;
+      }
+
+    }
+  }
+
+  .logo{
+    padding-top: 4vw;
+  }
+
+  .colors {
+    padding-top: 4vw;
+  }
+
+  .composition{
+    padding-top: 4vw;
+    padding-bottom: 12vw;
+    .composition__two{
+      p{
+        margin-top: 2vh;
+      }
+    }
+    .composition__three{
+      p{
+        margin-top: 2vh;
+      }
+    }
+  }
+
+  .fonts {
+    padding-top: 4vw;
+    .fonts__one{
+
+      h3 {
+        margin-top: 8vh;
+      }
+      p {
+        margin-top: 3vh;
+      }
+    }
+
+    .fonts__six {
+      padding-top: 4vw;
+    }
+  }
+
+  .graphics {
+    padding-top: 4vw;
+
+    .graphics__two {
+      p {
+        margin-top: 2vh;
+      }
+    }
+    .graphics__three{
+      p {
+        margin-top: 8vh;
+    padding-bottom: 3vh;
+      }
+      p:nth-of-type(2) {
+        margin-top: 12vh;
+      }
+      .graphics__columns__color{
+            margin-top: 6vh;
+      }
+    }
+  }
+
+  .photo {
+    padding-top: 4vw;
+
+    .photo__two {
+      .photo__food{
+        margin-top: 3vh;
+      }
+
+    }
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EOF

@@ -1,0 +1,476 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.section__one {
+  background: var(--main-yellow);
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+@mixin span-emj {
+
+  border-radius: 100px;
+  // border-radius: calc($ddd + 10vh);
+  background: var(--main-white);
+  padding: 4px 30px 10px 20px;
+}
+
+span {
+  @include span-emj ;
+}
+
+
+header {
+  height: 90vh;
+  border-radius: 0 0 70px 70px;
+
+  background: var(--main-grey);
+
+  .header__img {
+    height: 24px;
+  }
+
+
+  h1 {
+    width: 60vw;
+    font-size: 34px;
+    line-height: 150%;
+
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+  }
+
+  span {
+    padding: 8px 14px;
+    color: var(--main-grey);
+    background: var(--main-black);
+    vertical-align: middle;
+  }
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  z-index: 3;
+
+  border-radius: 0 0 70px 70px;
+  background: var(--main-yellow);
+
+    h4 {
+      font-size: 60px;
+
+      position: absolute;
+      top: 25vh;
+      left: 15vw;
+    }
+
+  .main__card {
+    display: flex;
+    flex-flow: row;
+    margin-left: 15vw;
+
+    position: absolute;
+    top: 38vh;
+
+
+
+      .main__card__one,
+      .main__card__two {
+        width: 480px;
+        height: 300px;
+        border-radius: 20px;
+        margin-right: 110px;
+
+        background: var(--main-grey);
+
+          h5 {
+            font-size: 40px;
+            font-weight: bold;
+            padding: 54px 48px 0 48px;
+          }
+
+          p {
+            font-family: "Inter";
+            font-size: 24px;
+            font-weight: 500;
+            padding: 36px 48px;
+            line-height: 142%;
+          }
+      }
+  }
+}
+
+@keyframes transformCards {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes transformCardsTwo {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.section__two {
+  background: var(--main-grey);
+  font-family: "Inter";
+  font-weight: bold;
+
+  .main__two {
+    height: 110vh;
+    transform: translateY(-10vh);
+
+    background: var(--main-black);
+    border-radius: 0 0 70px 70px;
+
+    h4 {
+      font-size: 60px;
+      width: 40vw;
+      line-height: 122%;
+
+      position: absolute;
+      top: 33vh;
+      left: 15vw;
+      color: var(--main-grey);
+    }
+
+    .main__two__p {
+      position: absolute;
+      top: 56vh;
+      margin-left: 15vw;
+
+      p {
+        font-family: "Inter";
+        font-size: 24px;
+        width: max-content;
+
+        padding: 12px 16px;
+        margin-bottom: 8px;
+
+        border-radius: 30px;
+        color: var(--main-black);
+        background: var(--main-grey);
+      }
+    }
+  }
+
+  .main__three {
+    height: 115vh;
+    position: relative;
+    border-radius: 0 0 70px 70px;
+    z-index: 2;
+
+    background: var(--main-grey);
+
+      h4 {
+        font-size: 60px;
+        width: 40vw;
+        line-height: 122%;
+
+        position: absolute;
+        top: 15vh;
+        left: 15vw;
+        color: var(--main-black);
+      }
+
+      p {
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 142%;
+
+        position: absolute;
+        top: 30vh;
+        width: 49vw;
+
+        margin-left: 15vw;
+        color: var(--main-black);
+      }
+
+      .main__three__card_one {
+        position: absolute;
+        width: 205vw;
+        bottom: 23vh;
+        transform: translateX(-10vw);
+        animation: transformCardsTwo 30s linear infinite;
+
+          span {
+            font-size: 90px;
+            padding: 32px 40px;
+            vertical-align: middle;
+
+
+            margin-left: 30px;
+            color: var(--main-grey);
+            background: var(--main-black);
+          }
+
+            .img__main__three__card {
+              width: 80px;
+            }
+      }
+
+      .main__three__card_two {
+        position: absolute;
+        width: 140vw;
+        bottom: 47vh;
+        transform: translateX(-5vw);
+        animation: transformCards 30s linear infinite;
+
+          span {
+            font-size: 90px;
+            padding: 32px 40px;
+
+
+            margin-left: 30px;
+            color: var(--main-grey);
+            background: var(--main-black);
+          }
+
+            .img__main__three__card {
+              width: 54px;
+            }
+      }
+  }
+}
+
+.section__three {
+  font-family: "Inter";
+
+  .main__four {
+    height: 115vh;
+    transform: translateY(-10vh);
+
+    border-radius: 0 0 70px 70px;
+    background: var(--main-yellow);
+
+    h4 {
+      font-size: 60px;
+      font-weight: bold;
+      width: 40vw;
+      line-height: 122%;
+
+      position: absolute;
+      top: 40vh;
+      left: 15vw;
+      color: var(--main-black);
+    }
+
+    p {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 142%;
+
+      position: absolute;
+      top: 63vh;
+      width: 30vw;
+
+      margin-left: 15vw;
+      color: var(--main-black);
+    }
+
+    .img__phone {
+      width: 500px;
+      position: absolute;
+      bottom: 0;
+      right: 15vw;
+    }
+  }
+
+  .main__five {
+    height: 190vh;
+    position: relative;
+    border-radius: 0 0 70px 70px;
+    z-index: 2;
+
+
+    h4 {
+      font-size: 60px;
+      font-weight: bold;
+      width: 50vw;
+      line-height: 122%;
+
+      position: absolute;
+      top: 15vh;
+      left: 15vw;
+      color: var(--main-black);
+    }
+
+    .main-five-card {
+      position: absolute;
+      top: 32vh;
+      left: 15vw;
+
+      height: 120vh;
+    }
+
+    .main_five_card {
+
+      width: 25vw;
+      height: 90vh;
+
+      position: sticky;
+      top: 6vh;
+
+      border-radius: 20px;
+      background: var(--main-yellow);
+
+        .main_five_card__img {
+          margin-left: 34px;
+          margin-top: 10px;
+          // transform: translate(50%, 50%);
+        }
+
+        .main__five__ingredients {
+          font-family: "Inter";
+          font-weight: bold;
+          margin-left: 24px;
+          margin-bottom: 48px;
+
+          p {
+            font-family: "Inter";
+            font-size: 18px;
+            margin: 30px 0;
+
+            span {
+              font-size: 24px;
+              padding: 8px 20px 10px 20px;
+              vertical-align: middle;
+              margin-right: 12px;
+
+                .main__five__ingredients__img {
+                  height: 24px;
+                  vertical-align: middle;
+                }
+            }
+          }
+        }
+      }
+
+      .main__five__group {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 120px;
+
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+
+        .main__five__group__p {
+          margin-bottom: 20vh;
+
+          h4 {
+            width: 40vw;
+            position: static;
+            left: 0;
+          }
+
+          p {
+            font-family: "Inter";
+            font-size: 24px;
+            font-weight: bold;
+            vertical-align: middle;
+            margin-top: 7vh;
+
+            span {
+              padding: 8px 20px 10px 20px;
+
+              .main__five__group__p__img {
+                height: 24px;
+                vertical-align: middle;
+              }
+            }
+            .main__five__group__p__img__arrow {
+              padding: 0 10px;
+            }
+
+          }
+        }
+      }
+    }
+
+}
+
+
+.section__four {
+  background: var(--main-black);
+  font-family: "Inter";
+  font-weight: bold;
+
+  .main__seven {
+    height: 120vh;
+    position: relative;
+    transform: translateY(-10vh);
+
+    background: var(--main-yellow);
+    border-radius: 0 0 70px 70px;
+
+    h4 {
+      font-size: 60px;
+      font-weight: bold;
+      width: 40vw;
+      line-height: 122%;
+
+      position: absolute;
+      top: 48vh;
+      left: 50vw;
+      color: var(--main-black);
+    }
+
+    p {
+      font-family: "Inter";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 142%;
+
+      width: 38vw;
+
+      position: absolute;
+      top: 71vh;
+      left: 50vw;
+      color: var(--main-black);
+    }
+
+    .main__six__img {
+      width: 500px;
+      position: absolute;
+      bottom: 0;
+      left: 15vw;
+    }
+  }
+
+  footer {
+    height: 70vh;
+    transform: translateY(-10vh);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /

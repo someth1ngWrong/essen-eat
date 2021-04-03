@@ -1,0 +1,138 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// :root {
+//   --main-yellow: #FFD401;
+//   --main-black: #222222;
+//   --main-grey: #F1F1F1;
+//   --main-white: #FFFFFF;
+// }
+//
+// body {
+//   background: var(--main-grey);
+//   overflow-x: hidden;
+// }
+
+.header {
+  height: 90vh;
+  background: var(--main-yellow);
+  border-radius: 0px 0px 70px 70px;
+}
+
+@mixin span-emj {
+
+  border-radius: 100px;
+  // border-radius: calc($ddd + 10vh);
+  background: var(--main-white);
+  padding: 4px 30px 10px 20px;
+}
+
+.header {
+  h1 {
+    position: absolute;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 60px;
+    width: 70vw;
+    line-height: 1.6;
+
+    top: 40vh;
+    left: 55vw;
+    transform: translate(-50%, -50%);
+    span {
+      @include span-emj ;
+    }
+  }
+}
+
+
+// span {
+//   @include span-emj ;
+// }
+
+@mixin emj-style {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.emj__meet {
+  @include emj-style;
+}
+
+.emj__peanuts{
+  @include emj-style;
+}
+
+.emj__milk{
+  @include emj-style;
+}
+
+.background_main {
+  background: var(--main-black);
+}
+
+
+main {
+  height: 100vh;
+  border-radius: 0px 0px 70px 70px;
+  background: var(--main-grey);
+
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  h2 {
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: var(--main-black);
+
+    width: 40vw;
+    margin-top: 50vh;
+    transform: translateY(-25%);
+    margin-left: 10vw;
+  }
+  .plate {
+    height: 90vh;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+
+footer {
+  height: 82vh;
+  background: var(--main-black);
+  h3 {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 60px;
+    width: 70vw;
+    line-height: 1.6;
+    color: var(--main-grey);
+
+    margin-top: 20vh;
+    margin-left: 56vw;
+    transform: translate(-50%, -50%);
+
+    @mixin emj-style-footer {
+      height: 65px;
+      vertical-align: middle;
+    }
+
+    .emj__phone {
+      @include emj-style-footer;
+    }
+
+    .emj__postbox {
+      @include emj-style-footer;
+    }
+
+    span{
+      background: var(--main-black);
+    }
+  }
+}
+
+
+// .

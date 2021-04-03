@@ -1,0 +1,43 @@
+<div class="header">
+  <p>test</p>
+  <h1>Сборник кулинарных рецептов<br>с гибкой заменой
+
+    <span>
+      <%= image_tag 'cut-of-meat', class: 'emj__meet'%> мясо</span><br><span>
+      <%= image_tag 'peanuts', class: 'emj__peanuts'%> oрехи</span>
+
+    <span>
+      <%= image_tag 'glass-of-milk', class: 'emj__milk'%> молоко</span>
+    продуктов
+  </h1>
+</div>
+
+<div class="background_main">
+  <main>
+    <%= image_tag 'plate.png', class: 'plate' %>
+    <h2>
+      Refood&nbsp;&mdash; сборник кулинарных рецептов, с&nbsp;гибкой системой замены некоторых ингредиентов, подбирающихся под предпочтения пользователя
+    </h2>
+  </main>
+
+  <footer>
+    <h3>
+      Узнайте о запуске
+      <span>
+        <%= image_tag 'mobile-phone', class: 'emj__phone'%></span>
+      сервиса,
+      <br>
+      подпишитесь
+      <span>
+        <%= image_tag 'postbox', class: 'emj__postbox'%></span>
+      на рассылку
+    </h3>
+
+    <%= render "subscribers/form" %>
+    <div class="btn__footer">
+    <%= link_to "О сервисе", about_path %>
+    <%= link_to "Посты", posts_path %>
+  </div>
+  </footer>
+
+</div>
