@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'landing/index', to: 'landing#index'
   get 'partners/index', to: 'partners#index'
   get 'styleguide', to: 'styleguide#index'
+  get 'main', to: 'main#index'
   root 'landing#index'
 
   get 'users', to: 'users#index'
