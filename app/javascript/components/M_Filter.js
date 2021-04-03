@@ -11,20 +11,26 @@ class M_Filter extends React.Component {
     return (
       <div>
         <div className="tab-options-block">
+
           <div className="tab-block">
+
             <div className="tab-option active">
               <A_IconOmnivore />
             </div>
+
             <div className="tab-option">
               <A_IconPescetarian />
             </div>
+
             <div className="tab-option">
               <A_IconVegan />
             </div>
+
             <div className="tab-option">
               <A_IconVegetarian />
             </div>
-            <p className="filter-text">Я ЕМ</p>
+
+            <p className="filter-text">Я ем</p>
           </div>
         </div>
       </div>

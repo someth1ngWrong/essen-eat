@@ -7,10 +7,10 @@ const O_InformationAuthor = () => {
   return (
     <div>
       <div className="img-title">
-        <A_TextTitle title='Пoдробhее'/>
+        <A_TextTitle title='Пoдробнее'/>
       </div>
       <M_TextInformation label='Совместимость' info='Подходит для вегетарианцев, для веганов' />
-      <M_TextInformation label='ДиапАзон цен' info='300 ₽ – 1 500 ₽' />
+      <M_TextInformation label='Диапазон цен' info='300 ₽ – 1 500 ₽' />
       <M_TextInformation label='Тип кухни' info='Ближневосточная' />
     </div>
   )

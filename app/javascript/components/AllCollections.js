@@ -29,7 +29,7 @@ const AllCollections = () => {
   return (
     <>
       <div className="cards-container">
-        <A_TextTitle title="пOдбopКи" />
+        <A_TextTitle title="подборки" />
         <div className="card-row-block">
           {data.map((card) => <M_Collection card={card} />)}
         </div>
