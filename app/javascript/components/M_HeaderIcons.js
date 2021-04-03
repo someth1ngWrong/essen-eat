@@ -9,15 +9,19 @@ class M_HeaderIcons extends React.Component {
   render (src) {
     return (
       <div className="action-container">
+
         <div className="action">
           <A_IconSettings />
         </div>
+
         <div className="action">
           <A_IconBookmark />
         </div>
+
         <div className="action">
           <A_IconSearch />
         </div>
+        
       </div>
     );
   }

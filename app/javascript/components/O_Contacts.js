@@ -12,7 +12,7 @@ const O_Contacts = () => {
   return (
     <>
       <div className="img-title author-spacing">
-        <A_TextTitle title='Адреc и kонтaкты' />
+        <A_TextTitle title='Адреc и контaкты' />
       </div>
       <div className="main-map-container" style={{ padding: '20px', marginBottom: '400px', maxHeight: '400px' }}>
         <A_Map />
