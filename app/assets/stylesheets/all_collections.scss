@@ -3,6 +3,7 @@
 
   .recipe-title {
     font-family: Inter;
+    text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  
+
   .card-block {
     min-width: 165px;
     max-width: 47%;
